@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="grey_title">#999999</color>
+    <color name="darkmagenta">#8b008b</color><!--暗洋红 -->
+    <color name="purple_profit">#9C35C7</color>
+
+    <color name="grey">#808080</color>
+    <color name="grey_little">#FAF9FA</color>
+    <color name="grayshallow">#f0f0f0</color><!--浅灰色 -->
+    <color name="gainsboro">#dcdcdc</color><!--淡灰色 -->
+    <color name="lightgrey">#d3d3d3</color><!--亮灰色 -->
+    <color name="white">#FFFFFF</color>
+    <color name="red_btn_stroke">#ED7370</color>
+
+    <!--半透明黑-->
+    <color name="transparent_black">#9f000000</color>
+    <!--半透白-->
+    <color name="transparent_white">#9fFFFFFF</color>
+    <!--全透明-->
+    <color name="transparent">#00000000</color>
+</resources>

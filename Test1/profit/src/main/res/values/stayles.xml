@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ProfitTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/grey_title</item>
+        <item name="colorPrimaryDark">@color/grey_title</item>
+        <item name="colorAccent">@color/purple_profit</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+    <!--正常字体-->
+    <style name="NomeTextProfitTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <!-- dialog -->
+    <style name="Theme_DialogProfitTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+</resources>

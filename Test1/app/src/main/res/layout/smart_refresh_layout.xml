@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/test_smartRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnablePreviewInEditMode="false">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:background="#fff"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <android.support.design.widget.TabLayout
+        android:visibility="gone"
+        android:id="@+id/test_Tab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="2dp"
+        android:background="@color/white"/>
+</FrameLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">mac AS</string>
+    <string name="test_name">测试</string>
+    <declare-styleable name="MNCalendar">
+        <!--最大支持的年数:不包括当前年-->
+        <attr name="mnCalendar_maxYear" format="integer" />
+        <!--最小支持的年数：包括当前年-->
+        <attr name="mnCalendar_minYear" format="integer" />
+    </declare-styleable>
+</resources>

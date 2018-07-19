@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lrd"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!--相机、相册权限-->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".activity.MyApplication"
+        android:allowBackup="true"
+        tools:replace="android:icon, android:label,android:theme"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:resizeableActivity="true">
+        <activity android:name="com.example.lrd.activity.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenLayout|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--视差特效页面-->
+        <activity android:name=".activity.SlidingActivity" android:screenOrientation="portrait"/>
+        <!--属性动画页面-->
+        <activity android:name=".activity.ObjectAnActivity" android:screenOrientation="portrait"/>
+        <!--测试date页面-->
+        <activity android:name=".activity_test.GetDateActivity" android:screenOrientation="portrait"/>
+        <!--测试transition页面-->
+        <activity android:name=".activity_test.ListViewActivity" android:screenOrientation="portrait"/>
+        <!--测试smartRefresh页面-->
+        <activity android:name=".activity_test.SmartRefreshActivity" android:screenOrientation="portrait"/>
+        <!--测试选择图片页面-->
+        <activity android:name=".activity_test.ChoosePhotoActivity" android:screenOrientation="portrait"/>
+        <!--测试webView-->
+        <activity android:name=".activity_test.WebActivity" android:screenOrientation="portrait"/>
+        <!--测试RxJAVA-->
+        <activity android:name=".activity_test.RxJavaActivity" android:screenOrientation="portrait"/>
+        <!--EasyPhotos-->
+        <activity android:name=".activity_test.EPhotoActivity" android:screenOrientation="portrait"/>
+        <!--美团日历-->
+        <activity android:name=".activity_test.CalendarActivity" android:screenOrientation="portrait"/>
+        <!--仿多选日历-->
+        <activity android:name=".hotel.PeroidSelectedActivity" android:screenOrientation="portrait"/>
+        <!--ToolBar-->
+        <activity android:name=".activity_test.ToolBarActivity" android:screenOrientation="portrait"/>
+        <!--CustomView-->
+        <activity android:name=".activity_test.CustomViewActivity" android:screenOrientation="portrait"/>
+        <!--Dropdown-->
+        <activity android:name=".activity_test.DropDownActivity" android:screenOrientation="portrait"/>
+        <!--Dropdown-->
+        <activity android:name=".activity_test.ServiceActivity" android:screenOrientation="portrait"/>
+
+        <!--测试MVP 登录-->
+        <activity android:name=".mvp.login.MVPLoginActivity" android:screenOrientation="portrait"/>
+        <!--测试MVP 首页-->
+        <activity android:name=".mvp.main.MVPMainActivity" android:screenOrientation="portrait"/>
+
+        <!--测试错误反馈-->
+        <activity android:name=".activity_test.MyFeedbackActivity" android:screenOrientation="portrait"/>
+        <provider
+            android:name=".view.MyProvider"
+            android:authorities="com.example.lrd.fileprovider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths_public" />
+        </provider>
+        <service android:name=".activity_test.DownloadSignatureService"/>
+</application>
+
+</manifest>

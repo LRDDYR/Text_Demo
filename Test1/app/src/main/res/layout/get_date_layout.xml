@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar_layout"/>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent1_black"
+            android:textColor="@color/white"
+            android:text="start"/>
+        <View
+            android:layout_width="10dp"
+            android:layout_height="1dp"/>
+        <Button
+            android:id="@+id/btn_end"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent1_black"
+            android:text="end"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.maning.calendarlibrary.MNCalendarVertical
+            android:id="@+id/mnCalendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mnCalendar_maxYear="2101"
+            app:mnCalendar_minYear="1900" />
+    </LinearLayout>
+</LinearLayout>

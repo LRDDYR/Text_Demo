@@ -1,0 +1,83 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+    defaultConfig {
+        applicationId "com.example.lrd.myapplication"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        renderscriptTargetApi 19
+        renderscriptSupportModeEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support:design:26.+'
+    compile 'com.android.support:cardview-v7:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile 'com.github.todou:appbarspring:1.0.4'
+    compile 'com.github.mmin18:realtimeblurview:1.1.0'
+    compile 'com.android.support:design:26.+'
+    compile project(':profit')
+    compile 'com.github.maning0303:MNCalendar:V1.0.3'
+    compile 'com.andkulikov:transitionseverywhere:1.7.8'//动画
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-7'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+    compile 'com.zhihu.android:matisse:0.4.3'
+    //知乎图片选择
+    compile 'com.github.hotchemi:permissionsdispatcher:3.1.0'
+    //权限
+    apt 'com.github.hotchemi:permissionsdispatcher-processor:3.1.0'
+    //权限
+    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    //导航栏
+    compile 'com.bigkoo:convenientbanner:2.0.5'
+    //banner
+    compile 'com.youth.banner:banner:1.4.10'
+    //banner
+    compile 'com.gelitenight.waveview:waveview:1.0.0'
+    //水波纹
+    compile 'com.webianks.library:easy-feedback:1.0.2'
+    //错误反馈
+    compile 'com.andrognito.patternlockview:patternlockview:1.0.0'
+    //图案解锁
+    compile 'io.reactivex.rxjava2:rxjava:2.1.0'
+    // 必要rxjava2依赖
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    // 必要rxandrroid依赖，切线程时需要用到
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    // 必要retrofit依赖
+    compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    // 必要依赖，和Rxjava结合必须用到，下面会提到
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    // 必要依赖，解析json字符所用
+    compile 'com.squareup.okhttp3:logging-interceptor:3.8.1'
+    //非必要依赖， log依赖，如果需要打印OkHttpLog需要添加
+    compile 'com.github.HuanTanSheng:EasyPhotos:2.3.2'
+    compile project(':RxTools-library')
+    //JSBridge
+    compile 'com.github.lzyzsd:jsbridge:1.0.4'
+    compile project(':cosmocalendar')
+}

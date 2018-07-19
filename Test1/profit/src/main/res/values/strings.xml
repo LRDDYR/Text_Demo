@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Profit</string>
+
+    <string name="net_state">请检查网络是否连接</string>
+    <string name="loading_text">加载中&#8230;</string>
+    <string name="_3">3大优势</string>
+    <string name="_home_m_t">累计收益</string>
+    <string name="_home_7">七年日化</string>
+    <string name="_home_t_w">万分收益</string>
+    <string name="_home_t_m">我的账户</string>
+    <string name="_home_t_sy">收益战胜</string>
+    <string name="_home_t_hq">活期存款</string>
+    <string name="_home_t_sc">随存随取</string>
+    <string name="_home_t_yf">一分起购</string>
+    <string name="_home_t_aq">安全保障</string>
+    <string name="_home_t_tk">同卡进出</string>
+    <string name="_home_t_sh">赎回</string>
+    <string name="_home_t_gm">购买</string>
+    <string name="yuan">元</string>
+    <string name="data_error">数据加载失败，请检查网络后重试</string>
+    <string name="refresh_btn">点击刷新</string>
+    <string name="_home_t_zr">昨日收益</string>
+    <string name="_home_t_zz">总资产</string>
+    <string name="_Add_t_lj">累计收益(元)</string>
+    <string name="_add_t_date">日期</string>
+    <string name="_add_t_sy">收益(元)</string>
+</resources>

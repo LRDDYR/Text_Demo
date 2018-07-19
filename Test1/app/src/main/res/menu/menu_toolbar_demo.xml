@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/toolbar_action1"
+        android:icon="@drawable/icon_search_black"
+        android:orderInCategory="93"
+       android:title="Action"
+       app:showAsAction="always"/>
+    <!--<item-->
+        <!--android:id="@+id/toolbar_act"-->
+        <!--android:icon="@drawable/s_light"-->
+        <!--android:orderInCategory="90"-->
+        <!--android:title="Action1"-->
+        <!--app:showAsAction="never"/>-->
+
+    <!--<item-->
+        <!--android:id="@+id/toolbar_action2"-->
+        <!--android:icon="@drawable/icon2x"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title="Action2"-->
+        <!--app:showAsAction="never"/>-->
+
+</menu>

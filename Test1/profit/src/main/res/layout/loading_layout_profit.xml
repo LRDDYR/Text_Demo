@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:padding="5dp"
+        android:gravity="center"
+        android:background="@drawable/loading_bg"
+        android:orientation="vertical">
+        <com.jcodecraeer.xrecyclerview.progressindicator.AVLoadingIndicatorView
+            android:id="@+id/loading_view"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:indicator="LineSpinFadeLoader"
+            app:indicator_color="@color/purple_profit"/>
+        <TextView
+            android:layout_marginTop="5dp"
+            style="@style/NomeTextProfitTheme"
+            android:text="@string/loading_text"/>
+    </LinearLayout>
+</LinearLayout>
